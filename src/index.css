@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+:root{
+    --white: #fff;
+    --primary: #f59e0b;
+    --hover: #f4bb59ff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url('/bg_clima.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+    font-size: 2rem;
+}
