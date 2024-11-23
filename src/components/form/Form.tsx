@@ -5,7 +5,7 @@ import { SearchType } from "../../types/index.ts";
 import Alert from "../alert/Alert.tsx";
 
 type FormProps = {
-    fetchWeather: () => void
+    fetchWeather: (search: SearchType) => Promise<void>
 }
 
 export default function Form({fetchWeather}: FormProps) {
@@ -33,7 +33,7 @@ export default function Form({fetchWeather}: FormProps) {
             return
         }
 
-        fetchWeather()
+        fetchWeather(search)
 
     }
 
